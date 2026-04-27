@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30代の毎日のムダ毛処理、そろそろやめませんか？【脱毛で自由な肌へ】</title>
+<meta name="description" content="毎朝の自己処理に疲れた30代女性へ。脱毛サロン・医療脱毛で手間から解放される方法を分かりやすく解説。無料カウンセリングあり。">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.7;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ===== VARIABLES ===== */
+:root {
+  --rose: #d4547a;
+  --rose-light: #fdeef4;
+  --rose-deep: #b03464;
+  --cream: #fdf8f3;
+  --warm: #f5e6d8;
+  --text-dark: #1a1a1a;
+  --text-mid: #555;
+  --text-light: #999;
+  --border: #e8e0d8;
+  --shadow: 0 6px 24px rgba(0,0,0,0.07);
+  --radius: 16px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(160deg, #fdeef4 0%, #fdf8f3 60%, #f5e6d8 100%);
+  padding: 48px 20px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(212,84,122,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1.5px solid var(--rose);
+  color: var(--rose);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: clamp(20px, 5.5vw, 30px);
+  font-weight: 900;
+  line-height: 1.45;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+.hero h1 .accent { color: var(--rose); }
+.hero h1 .underline {
+  display: inline-block;
+  position: relative;
+}
+.hero h1 .underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0; right: 0;
+  height: 8px;
+  background: rgba(212,84,122,0.2);
+  z-index: -1;
+}
+.hero-body {
+  font-size: 14px;
+  color: var(--text-mid);
+  max-width: 460px;
+  margin: 0 auto 24px;
+  line-height: 1.9;
+}
+.hero-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
+  color: #fff;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 900;
+  box-shadow: 0 6px 20px rgba(212,84,122,0.4);
+  letter-spacing: 0.5px;
+}
+.hero-note { font-size: 12px; color: var(--text-light); margin-top: 10px; }
+
+/* ===== CONTAINER ===== */
+.container { max-width: 680px; margin: 0 auto; padding: 0 18px; }
+
+/* ===== STORY SECTION ===== */
+.story-section { padding: 48px 0; }
+.story-lead {
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+.story-lead em { color: var(--rose); font-style: normal; }
+
+.pain-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.pain-card {
+  background: var(--cream);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.pain-emoji { font-size: 28px; flex-shrink: 0; }
+.pain-text h3 { font-size: 15px; font-weight: 900; margin-bottom: 4px; }
+.pain-text p { font-size: 13px; color: var(--text-mid); line-height: 1.7; }
+
+/* ===== BRIDGE SECTION ===== */
+.bridge {
+  background: var(--rose);
+  color: #fff;
+  padding: 36px 24px;
+  text-align: center;
+  margin: 40px 0;
+}
+.bridge h2 {
+  font-size: clamp(18px, 4.5vw, 24px);
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.bridge p { font-size: 14px; line-height: 1.9; opacity: 0.92; }
+.bridge strong { font-size: 18px; display: block; margin: 12px 0 4px; }
+
+/* ===== VOICE SECTION ===== */
+.voice-section {
+  background: var(--cream);
+  padding: 48px 0;
+}
+.voice-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+.voice-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.voice-card::before {
+  content: '"';
+  font-size: 60px;
+  color: var(--rose-light);
+  position: absolute;
+  top: 8px; left: 12px;
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+.voice-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.voice-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--rose-light), var(--warm));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.voice-name { font-weight: 700; font-size: 14px; }
+.voice-age { font-size: 12px; color: var(--text-light); }
+.voice-text {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--text-mid);
+  padding-left: 8px;
+}
+.voice-note { font-size: 11px; color: var(--text-light); margin-top: 8px; text-align: right; }
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+  font-size: clamp(17px, 4.2vw, 22px);
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+  padding-bottom: 14px;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 44px; height: 3px;
+  background: var(--rose);
+  border-radius: 2px;
+}
+
+/* ===== RECOMMEND SECTION ===== */
+.recommend-section { padding: 48px 0; }
+
+.rec-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+  border: 1.5px solid var(--border);
+}
+.rec-head {
+  padding: 16px 20px;
+  display: flex; align-items: center; gap: 14px;
+}
+.rec-num {
+  background: var(--rose);
+  color: #fff;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 900;
+  flex-shrink: 0;
+}
+.rec-info .name { font-size: 17px; font-weight: 900; }
+.rec-info .label {
+  font-size: 11px;
+  background: var(--rose-light);
+  color: var(--rose-deep);
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 4px;
+}
+.rec-card.type-a .rec-head { background: linear-gradient(90deg, #fff0f5, #fff); }
+.rec-card.type-b .rec-head { background: linear-gradient(90deg, #f3f0ff, #fff); }
+.rec-card.type-c .rec-head { background: linear-gradient(90deg, #f0f8ff, #fff); }
+
+.rec-body { padding: 18px 20px; }
+.rec-desc { font-size: 14px; color: var(--text-mid); line-height: 1.8; margin-bottom: 16px; }
+
+.rec-points {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 8px;
+  margin-bottom: 18px;
+}
+.rec-points li {
+  font-size: 14px;
+  display: flex; align-items: flex-start; gap: 8px;
+}
+.rec-points li::before { content: '🌸'; font-size: 13px; flex-shrink: 0; margin-top: 2px; }
+
+.cta-btn {
+  display: block;
+  background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 17px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 900;
+  box-shadow: 0 4px 16px rgba(212,84,122,0.35);
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.cta-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+.cta-note { font-size: 12px; color: var(--text-light); text-align: center; margin-top: 8px; }
+
+/* ===== STEP SECTION ===== */
+.step-section {
+  background: var(--cream);
+  padding: 48px 0;
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 24px;
+  position: relative;
+}
+.steps::before {
+  content: '';
+  position: absolute;
+  left: 24px; top: 28px; bottom: 28px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--rose), var(--rose-deep));
+  z-index: 0;
+}
+.step {
+  display: flex;
+  gap: 20px;
+  padding: 0 0 28px 0;
+  position: relative;
+  z-index: 1;
+}
+.step-num {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--rose);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 900;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 4px #fff;
+}
+.step-content { padding-top: 8px; }
+.step-content h3 { font-size: 16px; font-weight: 900; margin-bottom: 6px; }
+.step-content p { font-size: 14px; color: var(--text-mid); line-height: 1.75; }
+
+/* ===== URGENCY ===== */
+.urgency {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+  padding: 36px 24px;
+  text-align: center;
+  margin: 40px 0;
+}
+.urgency h2 {
+  font-size: clamp(17px, 4vw, 22px);
+  font-weight: 900;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+.urgency h2 span { color: #ffccd8; }
+.urgency p { font-size: 14px; opacity: 0.85; line-height: 1.9; margin-bottom: 20px; }
+.urgency .cta-btn {
+  background: linear-gradient(135deg, #ff7eb3 0%, var(--rose) 100%);
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+/* ===== GUARANTEE ===== */
+.guarantee-section { padding: 48px 0; }
+.guarantee-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 20px;
+}
+@media (max-width: 400px) { .guarantee-cards { grid-template-columns: 1fr; } }
+.g-card {
+  background: var(--cream);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  text-align: center;
+}
+.g-icon { font-size: 32px; margin-bottom: 8px; }
+.g-title { font-size: 14px; font-weight: 900; margin-bottom: 6px; }
+.g-desc { font-size: 12px; color: var(--text-mid); line-height: 1.6; }
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  font-size: 11px;
+  color: var(--text-light);
+  border-top: 1px solid var(--border);
+  padding: 20px 0;
+  line-height: 1.9;
+}
+
+/* ===== STICKY CTA ===== */
+.sticky-cta {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(8px);
+  padding: 12px 16px;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+.sticky-inner { max-width: 500px; margin: 0 auto; }
+.sticky-cta .cta-btn { font-size: 15px; padding: 15px; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: #1a1a1a;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  padding-bottom: 80px;
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-tag">✨ 30代女性向けガイド</div>
+  <h1>
+    毎朝の自己処理、<br>
+    <span class="underline accent">もう疲れませんでしたか？</span><br>
+    <span style="font-size:0.8em;font-weight:700;">脱毛で「手間ゼロ」の毎日へ</span>
+  </h1>
+  <p class="hero-body">
+    仕事・家事・育児で忙しい30代だからこそ、<br>
+    ムダ毛の自己処理をやめてラクになりませんか。<br>
+    まずは<strong>無料カウンセリング</strong>から始められます。
+  </p>
+  <a href="YOUR_A8_AFFILIATE_LINK" class="hero-cta" target="_blank" rel="nofollow noopener">
+    🌸 無料カウンセリングを予約する
+  </a>
+  <p class="hero-note">※相談だけでもOK / 勧誘はありません</p>
+</section>
+
+<!-- STORY / PAIN -->
+<section class="story-section">
+  <div class="container">
+    <p class="story-lead">
+      「もう自己処理、<em>やめたい</em>」<br>
+      そう思ったことはありませんか？
+    </p>
+    <div class="pain-cards">
+      <div class="pain-card">
+        <span class="pain-emoji">⏰</span>
+        <div class="pain-text">
+          <h3>毎朝10分以上、ムダに時間を使っている</h3>
+          <p>年間60時間以上を自己処理に費やしているとしたら、もっと自分のために使いたくありませんか？</p>
+        </div>
+      </div>
+      <div class="pain-card">
+        <span class="pain-emoji">😰</span>
+        <div class="pain-text">
+          <h3>カミソリ負け・埋没毛が肌荒れの原因に</h3>
+          <p>自己処理を繰り返すほど肌ダメージが蓄積。30代になってから特に気になりはじめた方も多いです。</p>
+        </div>
+      </div>
+      <div class="pain-card">
+        <span class="pain-emoji">👙</span>
+        <div class="pain-text">
+          <h3>旅行・プール・温泉でも気兼ねなく過ごしたい</h3>
+          <p>処理が間に合わなかったときのあの焦り。脱毛後はそういったストレスから解放される方が多いです。</p>
+        </div>
+      </div>
+      <div class="pain-card">
+        <span class="pain-emoji">💸</span>
+        <div class="pain-text">
+          <h3>カミソリ・除毛クリームの費用が地味に痛い</h3>
+          <p>毎月の自己処理コストを計算すると、脱毛の費用と大差ないことに気づく方も少なくありません。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRIDGE -->
+<div class="bridge">
+  <h2>その悩み、<br>脱毛で一度に解消できます</h2>
+  <p>
+    自己処理の<strong>時間・肌ダメージ・ストレス</strong>から解放されて、<br>
+    毎日をもっと自分らしく過ごせるようになります。<br>
+    まずは気軽に無料カウンセリングへ。
+  </p>
+</div>
+
+<!-- VOICE SECTION -->
+<section class="voice-section">
+  <div class="container">
+    <h2 class="section-title">脱毛を始めた30代の声</h2>
+    <div class="voice-cards">
+      <div class="voice-card">
+        <div class="voice-profile">
+          <div class="voice-avatar">👩</div>
+          <div>
+            <div class="voice-name">Aさん（34歳・会社員）</div>
+            <div class="voice-age">医療脱毛クリニック通院中</div>
+          </div>
+        </div>
+        <p class="voice-text">毎朝シャワー後の処理が本当に面倒で、思い切って始めました。「もっと早くやっておけばよかった」と感じています。朝の準備時間が短くなりました。</p>
+        <p class="voice-note">※個人の感想です。効果には個人差があります。</p>
+      </div>
+      <div class="voice-card">
+        <div class="voice-profile">
+          <div class="voice-avatar">👩‍💼</div>
+          <div>
+            <div class="voice-name">Bさん（31歳・育児中）</div>
+            <div class="voice-age">脱毛サロン通院中</div>
+          </div>
+        </div>
+        <p class="voice-text">育休中に始めました。無料カウンセリングでじっくり相談できて、自分のペースで通えているのがよかったです。子育ての隙間時間を活用しています。</p>
+        <p class="voice-note">※個人の感想です。効果には個人差があります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECOMMEND -->
+<section class="recommend-section">
+  <div class="container">
+    <h2 class="section-title" style="margin-bottom:8px;">30代女性に<br>おすすめの脱毛サービス</h2>
+    <p style="text-align:center;font-size:13px;color:#999;margin-bottom:28px;">無料カウンセリングから気軽にスタートできます</p>
+
+    <!-- REC 1 -->
+    <div class="rec-card type-a">
+      <div class="rec-head">
+        <div class="rec-num">1</div>
+        <div class="rec-info">
+          <div class="name">湘南美容クリニック</div>
+          <span class="label">医療脱毛クリニック</span>
+        </div>
+      </div>
+      <div class="rec-body">
+        <p class="rec-desc">全国140院以上のネットワークを持つ医療脱毛クリニック。TVCM放映中の安心感と、医師監修のもとでの施術が30代女性に多く選ばれています。</p>
+        <ul class="rec-points">
+          <li>全国どこでも通いやすいネットワーク</li>
+          <li>医師や看護師による施術・サポート</li>
+          <li>脱毛後の肌ケアも相談できる環境</li>
+        </ul>
+        <a href="YOUR_A8_AFFILIATE_LINK_SBC" class="cta-btn" target="_blank" rel="nofollow noopener">
+          🌸 無料カウンセリングを予約する →
+        </a>
+        <p class="cta-note">※予約・相談のみでもOKです</p>
+      </div>
+    </div>
+
+    <!-- REC 2 -->
+    <div class="rec-card type-b">
+      <div class="rec-head">
+        <div class="rec-num">2</div>
+        <div class="rec-info">
+          <div class="name">全身脱毛Dione</div>
+          <span class="label">脱毛サロン</span>
+        </div>
+      </div>
+      <div class="rec-body">
+        <p class="rec-desc">全身・顔・VIOまで対応した脱毛サロン。体験コースから始められるため「まず試してみたい」という30代の方に人気です。</p>
+        <ul class="rec-points">
+          <li>全身＋顔＋VIOまでトータルケア</li>
+          <li>体験コースで気軽にスタートできる</li>
+          <li>プライベートな個室での落ち着いた施術</li>
+        </ul>
+        <a href="YOUR_A8_AFFILIATE_LINK_DIONE" class="cta-btn" target="_blank" rel="nofollow noopener">
+          🌸 体験コースを申し込む →
+        </a>
+        <p class="cta-note">※相談のみでも可</p>
+      </div>
+    </div>
+
+    <!-- REC 3 -->
+    <div class="rec-card type-c">
+      <div class="rec-head">
+        <div class="rec-num">3</div>
+        <div class="rec-info">
+          <div class="name">ミュゼプラチナム</div>
+          <span class="label">脱毛サロン</span>
+        </div>
+      </div>
+      <div class="rec-body">
+        <p class="rec-desc">業界トップクラスの店舗数を誇るサロン。予約のしやすさと手頃な料金プランで、忙しい30代女性のスケジュールに合わせて通いやすいと評判です。</p>
+        <ul class="rec-points">
+          <li>全国600店舗以上で予約しやすい</li>
+          <li>手頃な料金プランで続けやすい</li>
+          <li>転居後も近くの店舗に変更できる</li>
+        </ul>
+        <a href="YOUR_A8_AFFILIATE_LINK_MUSEE" class="cta-btn" target="_blank" rel="nofollow noopener">
+          🌸 無料カウンセリングを予約する →
+        </a>
+        <p class="cta-note">※予約・相談のみでも可</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STEP SECTION -->
+<section class="step-section">
+  <div class="container">
+    <h2 class="section-title">はじめ方は3ステップだけ</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>気になるサービスを選ぶ</h3>
+          <p>上記のランキングから、立地・価格・種類を参考に自分に合ったサービスを選びましょう。迷ったら複数の無料カウンセリングを試すのもOKです。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>無料カウンセリングを予約する</h3>
+          <p>ほとんどのサービスは無料カウンセリングから始められます。費用・施術内容・通い方をじっくり相談できます。その場で契約する義務はありません。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>施術スタート・自己処理から解放</h3>
+          <p>プランが決まったら施術開始。回数を重ねるごとに自己処理の手間が減り、毎日が楽になっていきます。※効果には個人差があります。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY -->
+<div class="urgency">
+  <div class="container">
+    <h2>夏前に始めた人が、<span>夏を楽しんでいる</span></h2>
+    <p>
+      脱毛は複数回の施術が必要なため、早めのスタートが大切です。<br>
+      「来年こそ」と先延ばしにしてきた方、今年こそ変わりませんか？<br>
+      まずは無料カウンセリングで相談するだけでOKです。
+    </p>
+    <a href="YOUR_A8_AFFILIATE_LINK_SBC" class="cta-btn" target="_blank" rel="nofollow noopener">
+      🌸 今すぐ無料カウンセリングを予約する →
+    </a>
+    <p class="hero-note" style="color:rgba(255,255,255,0.6);margin-top:10px;">※相談のみでも大丈夫です</p>
+  </div>
+</div>
+
+<!-- GUARANTEE -->
+<section class="guarantee-section">
+  <div class="container">
+    <h2 class="section-title">はじめての方でも安心</h2>
+    <div class="guarantee-cards">
+      <div class="g-card">
+        <div class="g-icon">💬</div>
+        <div class="g-title">無料カウンセリング</div>
+        <div class="g-desc">費用・施術内容・疑問を事前にすべて相談できます</div>
+      </div>
+      <div class="g-card">
+        <div class="g-icon">🔒</div>
+        <div class="g-title">個室プライバシー</div>
+        <div class="g-desc">プライベートな空間でリラックスして施術できます</div>
+      </div>
+      <div class="g-card">
+        <div class="g-icon">📱</div>
+        <div class="g-title">WEB予約で簡単</div>
+        <div class="g-desc">スマホから24時間いつでも予約できます</div>
+      </div>
+      <div class="g-card">
+        <div class="g-icon">💳</div>
+        <div class="g-title">分割払い対応</div>
+        <div class="g-desc">多くのサービスで分割払いに対応しています</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="container">
+  <div class="disclaimer">
+    <p>【免責事項・表示に関するご注意】</p>
+    <p>本サイトはアフィリエイト広告（A8.net等）を利用しています。掲載されているお客様の声は個人の感想であり、効果・結果には個人差があります。掲載情報は執筆時点のものであり、最新情報は各公式サイトをご確認ください。料金・プラン内容は予告なく変更される場合があります。医療脱毛は医療機関での施術です。サロン脱毛はエステティックサービスです。各施術の特性・リスク・注意事項については、事前に必ず担当スタッフ・医師にご確認ください。</p>
+  </div>
+</div>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+  <div class="sticky-inner">
+    <a href="YOUR_A8_AFFILIATE_LINK_SBC" class="cta-btn" target="_blank" rel="nofollow noopener">
+      🌸 無料カウンセリングを予約する（無料）
+    </a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 脱毛ガイド for 30代 | 当サイトはアフィリエイト広告を利用しています</p>
+</footer>
+
+</body>
+</html>
